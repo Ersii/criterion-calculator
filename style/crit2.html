@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="algebra-0.2.6.min.js"></script>
+    <script src="nerdamer.core.js"></script> <!-- assuming you've saved the file in the root of course -->
+    <!-- LOAD ADD-ONS -->
+    <script src="Algebra.js"></script>
+    <script src="Calculus.js"></script>
+    <script src="Solve.js"></script>
+    <script src="Extra.js"></script> <!-- again assuming you've saved the files in root -->
+    <script src="polynomial.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Kritéria stability</title>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link font-weight-bold" href="index.html">Domov<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="crit.html">Routhovo kritérium stability</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="crit2.html">Hurwitzovo kritérium stability</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="char.html">Prechodová/Impulzná charakteristika</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<br>
+
+<div class="container">
+	<br>
+
+    <div id="right">
+        <div class="center"><h1>Hurwitzovo kritérium stability</h1>
+            <p class="font-weight-bold">Vlož koeficienty oddelené čiarkou/medzerou </p>
+            <input type="text" name="vstup" id="vstup2">
+            <button class="btn btn-primary " onclick="start2()" >počítaj</button></div>
+        <div class="out">        	
+            <div id='output2' ></div>
+            <div id='output3' class="farba"></div>
+            <div id='output4' ></div>
+            <div id="table2"></div>
+        </div>
+    
+    </div>
+</div>
+<script src="myscript.js"></script>
+</body>
+
+</html>

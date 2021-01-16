@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="algebra-0.2.6.min.js"></script>
+    <script src="nerdamer.core.js"></script> <!-- assuming you've saved the file in the root of course -->
+    <!-- LOAD ADD-ONS -->
+    <script src="Algebra.js"></script>
+    <script src="Calculus.js"></script>
+    <script src="Solve.js"></script>
+    <script src="Extra.js"></script> <!-- again assuming you've saved the files in root -->
+    <script src="polynomial.js"></script>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<title>Prechodová/Impulzná charakteristika</title>
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link font-weight-bold" href="index.html">Domov<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="crit.html">Routhovo kritérium stability</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="crit2.html">Hurwitzovo kritérium stability</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="char.html">Prechodová/Impulzná charakteristika</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+<br>
+
+
+
+<div class="container">
+	<div id="next">
+		<br>
+        <div class="center"><h1>Prechodova/Impulzná charakteristika</h1><br>
+        	
+        		<div class="col-auto my-1">
+		        	<select class="form-control" id="selectid" style="width: 40%; margin: auto;">
+					  <option value="1">prechodová charakteristika</option>
+					  <option value="2">impulzná charakteristika</option>
+					</select>
+				</div><br>
+
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-3" style="padding-right: 0px;">
+							<label >Čitateľ: </label><br>
+							<label >Menovateľ: </label><br>
+							<label >Zadaj t: </label><br>
+							<label >Veľkosť kroku v grafe: </label>
+						</div>
+						<div class="col-3" style="padding-left: 0px;">
+							
+								<input  type="text" name="vstup4" id="vstup4" required><br>			     
+					            <input  type="text" name="vstup3" id="vstup3" required><br>			            
+					            <input  type="number" name="t" id="t" required><br>			            
+					            <input   type="number" name="krok" value="0.01" id="krok">				            
+						</div>
+					</div>
+					<button class="btn btn-primary" onclick="start3()" >Počítaj</button>
+					
+            	</div><br>
+
+            <br>
+            
+            <div id="zlomok2"></div>
+            <div id="ecka"></div>
+            <div id="myDiv"></div>
+
+        </div>
+    </div>
+</div>
+
+<script src="myscript.js"></script>
+
+</body>
+
+</html>
